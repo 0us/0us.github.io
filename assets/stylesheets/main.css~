@@ -1,17 +1,16 @@
-header {
+header{
   background-color: orange;
   height: 70px;
   padding: 0 50px;
 }
 
-nav {
+nav{
   float: right;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-
-.navButton {
+.navButton{
   text-decoration: none;
   font-size: 120%;
   padding: 0 2em;
@@ -23,10 +22,13 @@ nav {
   line-height: 60px;
   margin: 25px 25px;
   text-align: center;
-  bordepr: 0;
+  border: 0;
   transition: all 0.3s ease 0s;
   float: none;
 }
+}
+
+
 
 body {
   width: 100%;
@@ -34,20 +36,21 @@ body {
   padding: 0;
 }
 
-img {
+img{
   height: 100%;
   width: auto;
 }
 
-h3 {
-  margin-top: 0px;
+h3{
+	margin-top: 0px;
 }
 
-.navButton:hover {
+
+.navButton:hover{
   background-color: #39ff14;
 }
 
 footer {
-  background-color: orange;
-  bottom: 0px;
+	background-color: orange;
+	bottom: 0px;
 }
