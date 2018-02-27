@@ -1,0 +1,15 @@
+header{
+  background-color: orange;
+  height: 50px;
+}
+
+.navButton{
+  text-decoration: none;
+  font-size: 120%;
+  color: black;
+  padding: 0 1em;
+}
+
+.navButton:hover{
+  background-color: #39ff14;
+}
