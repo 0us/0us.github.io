@@ -1,25 +1,50 @@
 header{
   background-color: orange;
-  height: 50px;
+  height: 70px;
+  padding: 0 50px;
 }
 
+nav{
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navButton{
+  text-decoration: none;
+  font-size: 120%;
+  padding: 0 2em;
+  background: orange;
+  color: black;
+  font-family: Sans-serif;
+  height: 60px;
+  width: 150px;
+  line-height: 60px;
+  margin: 25px 25px;
+  text-align: center;
+  border: 0;
+  transition: all 0.3s ease 0s;
+  float: none;
+}
+}
+
+
+
 body {
-	height: 100%;
-	width: 100%;
-	max-width: 2000px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  height: 100%;
+  width: auto;
 }
 
 h3{
 	margin-top: 0px;
 }
 
-.navButton{
-  text-decoration: none;
-  font-size: 120%;
-  color: black;
-  padding: 0 1em;
-  border-style: solid;
-}
 
 .navButton:hover{
   background-color: #39ff14;
