@@ -1,0 +1,67 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+header {
+  background-color: orange;
+  height: 70px;
+  padding: 0 50px;
+}
+
+nav {
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navButton {
+  text-decoration: none;
+  font-size: 120%;
+  padding: 0 2em;
+  background: orange;
+  color: black;
+  font-family: Sans-serif;
+  height: 60px;
+  width: 150px;
+  line-height: 60px;
+  margin: 25px;
+  text-align: center;
+  border: 0;
+  transition: all 0.3s ease 0s;
+  float: none;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 200px; /*padding bottom er samme høyde som footer*/
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+h3 {
+  margin-top: 0px;
+}
+
+.navButton:hover {
+  background-color: #39ff14;
+}
+
+footer {
+  background-color: orange;
+  clear: both;
+  text-align: center;
+  font-size: 0.9em;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
