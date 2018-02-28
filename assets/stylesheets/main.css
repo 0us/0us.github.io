@@ -42,6 +42,10 @@ body {
   padding-bottom: 200px; /*padding bottom er samme høyde som footer*/
 }
 
+section {
+	padding: 40px;
+}
+
 img {
   height: 100%;
   width: auto;
