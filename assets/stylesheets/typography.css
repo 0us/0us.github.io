@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /*! Typebase.less v0.1.0 | MIT License */
 /* Setup */
 html {
@@ -92,4 +95,19 @@ code {
 /* Hug the block above you */
 .hug {
   margin-top: 0;
+}
+
+/*
+  ======================================== 
+  "Om Oss" Styling
+  ========================================
+*/
+#bandMemberContainer h1
+{
+  font-family: 'Permanent Marker', cursive;
+}
+
+.bandMember h2
+{
+  font-family: 'Open Sans', sans-serif;
 }
