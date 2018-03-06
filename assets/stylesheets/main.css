@@ -1,5 +1,5 @@
 /**==FARGER==
-#F2F3F3 "BLACK HAZE" LIGHT SHADES
+#F2F3F3 "#2D2B2F HAZE" LIGHT SHADES
 #938EA7 "MANATEE" LIGHT ACCENT
 #EF770B "TANGO" MAIN COLOR
 #B73E52 "NIGHT SHADZ" DARK ACCENT
@@ -11,7 +11,7 @@ html {
 }
 
 header {
-  background-color: orange;
+  background-color: #EF770B;
   display: flex;
   padding: 0 50px;
 
@@ -29,8 +29,8 @@ nav {
   text-decoration: none;
   font-size: 120%;
   padding: 0 2em;
-  background: orange;
-  color: black;
+  background: #EF770B;
+  color: #2D2B2F;
   font-family: Sans-serif;
   height: 60px;
   width: 150px;
@@ -46,6 +46,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 0 0 300px 0; /*padding bottom er samme h?yde som footer*/
+  background-color: #F2F3F3;
+  color:  #2D2B2F;
 }
 
 section {
@@ -64,11 +66,11 @@ h3 {
 }
 
 .navButton:hover {
-  background-color: #39ff14;
+  color: #39ff14;
 }
 
 footer {
-  background-color: orange;
+  background-color: #EF770B;
   clear: both;
   text-align: center;
   font-size: 0.9em;
@@ -86,14 +88,14 @@ word-wrap: break-word;
 
 .merchItem {
   text-decoration: none;
-  color: black;
-  border: 1px solid black;
+
+  border: 1px solid #2D2B2F;
   text-align: center;
 }
 
 .merchItem a{
   text-decoration: none;
-  color: black;
+  color: #2D2B2F;
 }
 .merchItem:hover {
   text-decoration: underline;
@@ -172,7 +174,7 @@ word-wrap: break-word;
 
 
 /*
-  ======================================== 
+  ========================================
   "Om Oss" Styling
   ========================================
 */
@@ -191,7 +193,7 @@ word-wrap: break-word;
   margin-bottom: 0;
 }
 
-#bandArticle img 
+#bandArticle img
 {
   max-width: 100%;
   height: auto;
@@ -228,7 +230,7 @@ word-wrap: break-word;
   border-radius: 50%;
   display: block;
   margin: auto;
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
   overflow: hidden;
 }
