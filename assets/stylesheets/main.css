@@ -5,15 +5,17 @@ html {
 
 header {
   background-color: orange;
-  height: 70px;
+  display: flex;
   padding: 0 50px;
+
 }
 
 nav {
-  float: right;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  display: float;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  flex-flow: row wrap;
 }
 
 .navButton {
@@ -48,6 +50,8 @@ section {
 img {
   height: 100%;
   width: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h3 {
