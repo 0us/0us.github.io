@@ -5,7 +5,7 @@
 /* Setup */
 html {
   /* Change default typefaces here */
-  font-family: serif;
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 110%;
 }
 /* Copy & Lists */
@@ -98,11 +98,11 @@ code {
 }
 
 /*
-  ======================================== 
+  ========================================
   "Om Oss" Styling
   ========================================
 */
-#bandMemberContainer h1
+#bandMemberContainer h1, .fresh h1
 {
   font-family: 'Permanent Marker', cursive;
 }

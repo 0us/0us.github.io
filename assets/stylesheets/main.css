@@ -86,23 +86,34 @@ article {
 word-wrap: break-word;
 }
 
+/*====================
+MERCH PAGE Styling
+====================*/
 .merchItem {
+  margin-top: 60px;
   text-decoration: none;
-
-  border: 1px solid #2D2B2F;
+  padding: 10px;
   text-align: center;
+  border-bottom:10px dotted #B73E52;
 }
+.merchItem p {}
 
 .merchItem a{
   text-decoration: none;
   color: #2D2B2F;
+  border:solid #B73E52;
+  border-radius: 5px;
+  padding:5px;
+  margin: 5px;
 }
-.merchItem:hover {
-  text-decoration: underline;
-}
+
 .price {
   font-size: 120%;
   font-weight: bold;
+}
+.fresh {
+  text-align: center;
+  color: #B73E52;
 }
 
 
