@@ -6,16 +6,36 @@ html {
 header {
   background-color: orange;
   display: flex;
+  flex-flow: row wrap;
   padding: 0 50px;
 
 }
 
 nav {
-  display: float;
+  display: inline-flex;
   justify-content: space-around;
   align-items: center;
   align-content: space-around;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+nav li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-size: 16px;
 }
 
 .navButton {
@@ -49,8 +69,6 @@ section {
 img {
   height: 100%;
   width: auto;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 h3 {
