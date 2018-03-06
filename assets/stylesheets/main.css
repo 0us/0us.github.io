@@ -17,7 +17,7 @@ html {
   min-height: 100%;
 }
 
-body 
+body
 {
   width: 100%;
   margin: 0;
@@ -26,13 +26,13 @@ body
   color: #2D2B2F;
 }
 
-img 
+img
 {
   height: 100%;
   width: auto;
 }
 
-article 
+article
 {
 word-wrap: break-word;
 }
@@ -81,9 +81,14 @@ nav li {
   margin: 0 10px 0 10px;
 }
 
-.navButton:hover 
+.navButton:hover
 {
   color: #B73E52;
+}
+
+iframe {
+  margin: 30px;
+  border: 1px solid #B73E52;
 }
 
 /*
@@ -110,7 +115,7 @@ nav li {
   ========================================
 */
 
-footer 
+footer
 {
   background-color: #EF770B;
   clear: both;
@@ -317,4 +322,3 @@ footer
   text-align: center;
   color: #B73E52;
 }
-
