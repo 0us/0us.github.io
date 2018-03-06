@@ -111,3 +111,16 @@ code {
 {
   font-family: 'Open Sans', sans-serif;
 }
+
+/*
+  ======================================== 
+  "Nav" Styling
+  ========================================
+*/
+
+.navButton
+{
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif; 
+  font-variant: small-caps;
+}

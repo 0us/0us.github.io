@@ -1,21 +1,57 @@
 /**==FARGER==
-#F2F3F3 "#2D2B2F HAZE" LIGHT SHADES
-#938EA7 "MANATEE" LIGHT ACCENT
-#EF770B "TANGO" MAIN COLOR
-#B73E52 "NIGHT SHADZ" DARK ACCENT
-#2D2B2F "SHARK" DARK SHADES
+#F2F3F3 "Hvit" BLACK HAZE" LIGHT SHADES
+#938EA7 "Lilla" "MANATEE" LIGHT ACCENT
+#EF770B "Orange" "TANGO" MAIN COLOR
+#B73E52 "Rosa" "NIGHT SHADZ" DARK ACCENT
+#2D2B2F "Svart" "SHARK" DARK SHADES
 ============*/
+
+/*
+  ========================================
+  BODY
+  ========================================
+*/
+
 html {
   position: relative;
   min-height: 100%;
 }
 
+body 
+{
+  width: 100%;
+  margin: 0;
+  padding: 0 0 300px 0; /*padding bottom er samme h?yde som footer*/
+  background-color: #F2F3F3;
+  color: #2D2B2F;
+}
+
+img 
+{
+  height: 100%;
+  width: auto;
+}
+
+article 
+{
+word-wrap: break-word;
+}
+
+/*
+  ========================================
+  HEADER
+  ========================================
+*/
+
 header {
   background-color: #EF770B;
   display: flex;
   flex-flow: row wrap;
-  padding: 0 50px;
+}
 
+.logo
+{
+  padding-left: 50px;
 }
 
 nav {
@@ -27,12 +63,10 @@ nav {
   flex-wrap: nowrap;
 }
 
-
 nav ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  text-transform: uppercase;
 }
 
 nav li {
@@ -41,11 +75,19 @@ nav li {
   flex-wrap: wrap;
 }
 
-nav a {
-  font-size: 16px;
+.navButton
+{
+  text-decoration: none;
+  margin: 0 10px 0 10px;
 }
 
-.navButton {
+.navButton:hover 
+{
+  color: #B73E52;
+}
+
+/*
+.navButton2 {
   text-decoration: none;
   font-size: 120%;
   padding: 0 2em;
@@ -55,39 +97,21 @@ nav a {
   height: 60px;
   width: 150px;
   line-height: 60px;
-  margin: 25px;
-  text-align: center;
-  border: 0;
-  transition: all 0.3s ease 0s;
-  float: none;
-}
-
-body {
-  width: 100%;
   margin: 0;
-  padding: 0 0 300px 0; /*padding bottom er samme h?yde som footer*/
-  background-color: #F2F3F3;
-  color:  #2D2B2F;
+  text-align: center;
+  transition: all 0.3s ease 0s;
 }
+*/
 
-section {
 
-}
+/*
+  ========================================
+  FOOTER
+  ========================================
+*/
 
-img {
-  height: 100%;
-  width: auto;
-}
-
-h3 {
-  margin-top: 0px;
-}
-
-.navButton:hover {
-  color: #39ff14;
-}
-
-footer {
+footer 
+{
   background-color: #EF770B;
   clear: both;
   text-align: center;
@@ -99,41 +123,6 @@ footer {
   bottom: 0;
   left: 0;
 }
-
-article {
-word-wrap: break-word;
-}
-
-/*====================
-MERCH PAGE Styling
-====================*/
-.merchItem {
-  margin-top: 60px;
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-  border-bottom:10px dotted #B73E52;
-}
-.merchItem p {}
-
-.merchItem a{
-  text-decoration: none;
-  color: #2D2B2F;
-  border:solid #B73E52;
-  border-radius: 5px;
-  padding:5px;
-  margin: 5px;
-}
-
-.price {
-  font-size: 120%;
-  font-weight: bold;
-}
-.fresh {
-  text-align: center;
-  color: #B73E52;
-}
-
 
 /*=============================*/
 
@@ -201,7 +190,7 @@ MERCH PAGE Styling
 
 /*
   ========================================
-  "Heim" Styling
+  "Hjem" Styling
   ========================================
 */
 
@@ -295,3 +284,37 @@ MERCH PAGE Styling
 {
   color: #B73D52;
 }
+
+/*
+  ========================================
+  "Merch" styling
+  ========================================
+*/
+
+.merchItem {
+  margin-top: 60px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  border-bottom:10px dotted #B73E52;
+}
+.merchItem p {}
+
+.merchItem a{
+  text-decoration: none;
+  color: #2D2B2F;
+  border:solid #B73E52;
+  border-radius: 5px;
+  padding:5px;
+  margin: 5px;
+}
+
+.price {
+  font-size: 120%;
+  font-weight: bold;
+}
+.fresh {
+  text-align: center;
+  color: #B73E52;
+}
+
