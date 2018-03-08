@@ -17,8 +17,7 @@ html {
   min-height: 100%;
 }
 
-body
-{
+body {
   width: 100%;
   margin: 0;
   padding: 0 0 300px 0; /*padding bottom er samme h?yde som footer*/
@@ -26,19 +25,16 @@ body
   color: #2D2B2F;
 }
 
-img
-{
+img {
   height: 100%;
   width: auto;
 }
 
-article
-{
+article {
 word-wrap: break-word;
 }
 
-/*
-  ========================================
+/*  ========================================
   HEADER
   ========================================
 */
@@ -49,8 +45,7 @@ header {
   flex-flow: row wrap;
 }
 
-.logo
-{
+.logo {
   padding-left: 50px;
 }
 
@@ -75,14 +70,12 @@ nav li {
   flex-wrap: wrap;
 }
 
-.navButton
-{
+.navButton {
   text-decoration: none;
   margin: 0 10px 0 10px;
 }
 
-.navButton:hover
-{
+.navButton:hover {
   color: #B73E52;
 }
 
@@ -108,15 +101,13 @@ iframe {
 }
 */
 
-
 /*
   ========================================
   FOOTER
   ========================================
 */
 
-footer
-{
+footer {
   background-color: #EF770B;
   clear: both;
   text-align: center;
@@ -199,8 +190,7 @@ footer
   ========================================
 */
 
-#indexArticle
-{
+#indexArticle {
   padding-top: 80px;
   max-width: 900px;
   margin: auto;
@@ -212,29 +202,23 @@ footer
   ========================================
 */
 
-
-#bandArticle
-{
+#bandArticle {
   padding-top: 80px;
   max-width: 900px;
   margin: auto;
 }
 
-#bandArticle p
-{
+#bandArticle p {
   margin-top: 5px;
   margin-bottom: 0;
 }
 
-#bandArticle img
-{
+#bandArticle img {
   max-width: 100%;
   height: auto;
 }
 
-
-#bandMemberContainer
-{
+#bandMemberContainer {
   width: 100%;
   background-color: #2D2B30;
   margin: 75px 0 0 0;
@@ -242,24 +226,21 @@ footer
   background: linear-gradient(to right, #141619, #2D2B30);
 }
 
-#bandMemberContainer h1
-{
+#bandMemberContainer h1 {
   text-align: center;
   margin: 0;
   color: #F0770C;
   padding-top: 45px;
 }
 
-.bandMember
-{
+.bandMember {
   margin-top: 15px;
   display: inline-block;
   width: 20%;
   padding: 0 3px 0 3px;
 }
 
-.bandMember img
-{
+.bandMember img {
   border-radius: 50%;
   display: block;
   margin: auto;
@@ -268,16 +249,14 @@ footer
   overflow: hidden;
 }
 
-.bandMember h2
-{
+.bandMember h2 {
   color: #F2F4F3;
   display: block;
   text-align: center;
   font-size: 25px;
 }
 
-.bandMember h2 a:link, a:visited
-{
+.bandMember h2 a:link, a:visited {
   color: #F2F4F3;
   text-decoration: none;
   border: solid;
@@ -303,9 +282,11 @@ footer
   text-align: center;
   border-bottom:10px dotted #B73E52;
 }
-.merchItem p {}
+.merchItem p {
 
-.merchItem a{
+}
+
+.merchItem a {
   text-decoration: none;
   color: #2D2B2F;
   border:solid #B73E52;
@@ -318,6 +299,7 @@ footer
   font-size: 120%;
   font-weight: bold;
 }
+
 .fresh {
   text-align: center;
   color: #B73E52;
