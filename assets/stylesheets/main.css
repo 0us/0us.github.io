@@ -173,6 +173,28 @@ footer {
   width: 1fr;
 }
 
+@media screen and (min-width: 1200px) {
+  .container, .grid {
+    width: 1200px;
+  }
+
+  .col-1-3 {
+    width: 33,33%;
+  }
+
+  .col-2-3 {
+    width: 66,66%;
+  }
+
+  .col-1-2 {
+    width: 50%;
+  }
+
+  .col-1 {
+    width: 100%;
+  }
+}
+
 /*
   ========================================
   Clearfix
