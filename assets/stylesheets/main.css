@@ -20,9 +20,10 @@ html {
 body {
   width: 100%;
   margin: 0;
-  padding: 0 0 300px 0; /*padding bottom er samme h?yde som footer*/
+  padding: 0 0 200px 0; /*padding bottom er samme h?yde som footer*/
   background-color: #F2F3F3;
   color: #2D2B2F;
+  height: 100%;
 }
 
 img {
@@ -43,6 +44,7 @@ header {
   background-color: #EF770B;
   display: flex;
   flex-flow: row wrap;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logo {
@@ -56,6 +58,10 @@ nav {
   align-content: space-around;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+nav a{
+    color: white;
 }
 
 nav ul {
@@ -146,6 +152,10 @@ footer {
   width: 1fr;
 }
 
+.narrow {
+  width: 600px;
+}
+
 .container {
   padding-left: 30px;
   padding-right: 30px;
@@ -159,6 +169,10 @@ footer {
 .col-1-3, .col-2-3, .col-1-2, .col-1 {
   display: inline-block;
   vertical-align: top;
+}
+
+.col-1-4 {
+  width: 25%;
 }
 
 .col-1-3 {
@@ -181,6 +195,7 @@ footer {
   width: 1fr;
 }
 
+
 /**
  * If the screen size is larger than 1200 pixels in width
  * use this grid layout.
@@ -188,6 +203,7 @@ footer {
  * will most likely look really bad on ultrawide screens
  * and 4k monitors/TVs.
  */
+
 @media screen and (min-width: 1200px) {
   .container, .grid {
     width: 1200px;
@@ -208,6 +224,12 @@ footer {
   .col-1 {
     width: 100%;
   }
+
+
+
+.center {
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*
@@ -346,7 +368,126 @@ footer {
   font-weight: bold;
 }
 
+/*
+  ========================================
+  "Tour" styling
+  ========================================
+*/
+
+#concertContainers {
+  width: 100%;
+  margin: 0;
+}
+
+#concertContainers h1 {
+  text-align: center;
+  margin: 0;
+}
+
+#concertContainers p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.concertContainer {
+  border-bottom: solid #000000;
+  width: 100%;
+  padding: 15px 0 15px 0;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #601f2a, #B73E52);
+}
+
+.concertContainer h2 {
+  padding: 0;
+  margin: 0;
+  color: #F2F3F3;
+  display: inline-block;
+  float: left;
+}
+
+.concertContainer button {
+  margin: 9px 0 9px 0;
+  width: 150px;
+  padding: 5px 0 5px;       
+  border-style: solid;
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+  background-color: Transparent;
+  color: #F2F3F3;
+}
+
+.concertContainer button:hover {
+  color: #B73E52;
+  cursor: pointer;
+}
+
+/*
+  ========================================
+  "Individuelle artikler" styling
+  ========================================
+*/
+
+#AboutMe {
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+#AboutMe h2{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#AboutMe img{
+    max-width: 100%;
+    height: auto;
+    margin: 5px 10px 5px 10px;
+}
+
+#AboutMe p{
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+/*
+  ========================================
+  "Page-styling" 
+  ========================================
+*/
+
 .fresh {
   text-align: center;
   color: #B73E52;
+}
+
+/*
+  ========================================
+  "Kontakt" styling
+  ========================================
+*/
+
+.row {
+  width: 100%;
+  background-color: #2D2B30;
+  margin: 75px 0 0 0;
+  padding: 80px 0 100px 0;
+  background: linear-gradient(to right, #601f2a, #B73E52);
+}
+
+.lightText {
+  color: #F2F3F3;
+}
+
+.thicc article {
+  font-weight:
+}
+
+.coolList {
+  border-left: 5px solid #EF770B;
+/*background-color: #2D2B2F;
+opacity: 0.5;*/
+list-style-type: none;
+padding: 10px 20px;
 }
