@@ -310,11 +310,14 @@ footer {
   "AboutMe" styling
   ========================================
 */
-#AboutMe h2{
+
+#AboutMe {
     text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+#AboutMe h2{
     font-size: 200%;
     font-weight: bold;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 #AboutMe img{
@@ -324,9 +327,6 @@ footer {
 }
 
 #AboutMe p{
-    text-align: center;
-    font-size: 100%;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin-right: 70px;
     margin-left: 70px;
 }
