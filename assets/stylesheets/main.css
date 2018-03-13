@@ -20,19 +20,20 @@ html {
 body {
   width: 100%;
   margin: 0;
-  padding: 0 0 200px 0; /*padding bottom er samme h?yde som footer*/
+  padding: 0 0 200px 0;
+  /*padding bottom er samme h?yde som footer*/
   background-color: #F2F3F3;
   color: #2D2B2F;
   height: 100%;
 }
 
 img {
-  height: 100%;
+  max-height: 100%;
   width: auto;
 }
 
 article {
-word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /*========================================
@@ -41,39 +42,40 @@ word-wrap: break-word;
 */
 
 header {
+  position: fixed;
   background-color: #EF770B;
-  display: flex;
-  flex-flow: row wrap;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logo {
-  padding-left: 50px;
+  display: inline-block;
+  float: left;
+  margin: 10px 0 20px 35px;
+  height: 100%;
+  width: 100px;
 }
 
 nav {
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  display: inline-block;
+  float: left;
 }
 
-nav a{
-    color: white;
+nav a {
+  color: white;
 }
 
 nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  display: inline-block;
+  float: left;
+  margin: 50px;
+  padding: 0;
 }
 
 nav li {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: inline-block;
+  float: left;
 }
 
 .navButton {
@@ -85,27 +87,30 @@ nav li {
   color: #B73E52;
 }
 
+/*
+  ========================================
+  "Music" styling
+  ========================================
+*/
+
 iframe {
   margin: 30px;
   border: 1px solid #B73E52;
 }
 
-/*
-.navButton2 {
-  text-decoration: none;
-  font-size: 120%;
-  padding: 0 2em;
-  background: #EF770B;
-  color: #2D2B2F;
-  font-family: Sans-serif;
-  height: 60px;
-  width: 150px;
-  line-height: 60px;
-  margin: 0;
-  text-align: center;
-  transition: all 0.3s ease 0s;
+.albumDisplay {
+    border-bottom: 10px dotted #B73E52;
+    margin-bottom: 10%;
 }
-*/
+
+.albumDisplay img {
+  margin-top:10px;
+  display:inline-flex;
+}
+
+.albumDisplay article {
+  text-transform: uppercase;
+}
 
 /*
   ========================================
@@ -118,7 +123,7 @@ footer {
   clear: both;
   text-align: center;
   font-size: 0.9em;
-  height: 200px   ;
+  height: 200px;
   width: 100%;
   position: absolute;
   right: 0;
@@ -146,6 +151,7 @@ footer {
  * than 1200 pixels.
  * the
  */
+
 .container, .grid {
   margin: 0 auto;
   /*width: 1200px;*/
@@ -153,6 +159,7 @@ footer {
 }
 
 .narrow {
+  padding-top: 60px;
   width: 600px;
 }
 
@@ -195,7 +202,6 @@ footer {
   width: 1fr;
 }
 
-
 /**
  * If the screen size is larger than 1200 pixels in width
  * use this grid layout.
@@ -208,59 +214,52 @@ footer {
   .container, .grid {
     width: 1200px;
   }
-
   .col-1-3 {
     width: 33.33%;
   }
-
   .col-2-3 {
     width: 66.66%;
   }
-
   .col-1-2 {
     width: 50%;
   }
-
   .col-1 {
     width: 100%;
   }
+  .narrow {
+    width: 600px;
+  }
 
-
-
-.center {
-  margin: 0 auto;
-  text-align: center;
-}
-
-/*
+  .center {
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*
   ========================================
   Clearfix
   ========================================
 */
-
-.group:before, .group:after {
-  content: "";
-  display: table;
-}
-
-.group:after {
-  clear: both;
-}
-
-.group {
-  clear: both;
-  *zoom: 1;
-}
-
-/*
+  .group:before, .group:after {
+    content: "";
+    display: table;
+  }
+  .group:after {
+    clear: both;
+  }
+  .group {
+    clear: both;
+    *zoom: 1;
+  }
+  /*
   ========================================
   "Hjem" Styling
   ========================================
 */
 
 #indexArticle {
-  padding-top: 80px;
+  padding-top: 125px;
   max-width: 900px;
+  padding-bottom: 50px;
   margin: auto;
 }
 
@@ -271,7 +270,7 @@ footer {
 */
 
 #bandArticle {
-  padding-top: 80px;
+  padding-top: 225px;
   max-width: 900px;
   margin: auto;
 }
@@ -336,11 +335,101 @@ footer {
   color: #B73D52;
 }
 
+#bandArticle {
+    padding-top: 80px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#bandArticle p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#bandArticle img {
+  max-width: 100%;
+  height: auto;
+}
+
+#bandMemberContainer {
+  width: 100%;
+  background-color: #2D2B30;
+  margin: 75px 0 0 0;
+  padding: 50px 0 170px 0;
+  background: linear-gradient(to right, #141619, #2D2B30);
+}
+
+#bandMemberContainer h1 {
+  text-align: center;
+  margin: 0;
+  color: #F0770C;
+  padding-top: 45px;
+}
+
+.bandMember {
+  margin-top: 15px;
+  display: inline-block;
+  width: 20%;
+  padding: 0 3px 0 3px;
+}
+
+.bandMember img {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.bandMember h2 {
+  color: #F2F4F3;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+.bandMember h2 a:link, a:visited {
+  color: #F2F4F3;
+  text-decoration: none;
+  border: solid;
+  border-radius: 5px;
+  padding: 0 10px 5px 10px;
+}
+
+.bandMember a:hover {
+  color: #B73D52;
+}
+
 /*
-  ========================================
-  "Merch" styling
-  ========================================
+========================================
+"Merch" styling
+========================================
 */
+
+.merchItem {
+  margin-top: 60px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 10px dotted #B73E52;
+}
+
+.merchItem p {}
+
+.merchItem a {
+  text-decoration: none;
+  color: #2D2B2F;
+  border: solid #B73E52;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.price {
+  font-size: 120%;
+  font-weight: bold;
+}
 
 .merchItem {
   margin-top: 60px;
@@ -349,9 +438,8 @@ footer {
   text-align: center;
   border-bottom:10px dotted #B73E52;
 }
-.merchItem p {
 
-}
+.merchItem p {}
 
 .merchItem a {
   text-decoration: none;
@@ -367,21 +455,15 @@ footer {
   font-weight: bold;
 }
 
-<<<<<<< HEAD
-.fresh {
-  text-align: center;
-  color: #B73E52;
-}
-
-.fresh h2 {
-  margin-top: 2em;
-}
-
 /*
   ========================================
   "Tour" styling
   ========================================
 */
+
+#tourContainer {
+padding-top: 225px;
+}
 
 #concertContainers {
   width: 100%;
@@ -390,11 +472,13 @@ footer {
 
 #concertContainers h1 {
   text-align: center;
-  margin: 55px 0 0 0;
+  padding: 0;
+  margin: 0;
 }
 
 #concertContainers p {
   text-align: center;
+  padding: 0;
   margin-bottom: 75px;
 }
 
@@ -436,38 +520,37 @@ footer {
 
 
 /*
-  ========================================
-  "Individuelle artikler" styling
-  ========================================
+========================================
+"Individuelle artikler" styling
+========================================
 */
 
 #AboutMe {
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
-#AboutMe h2{
-    font-size: 200%;
-    font-weight: bold;
+#AboutMe h2 {
+  font-size: 200%;
+  font-weight: bold;
 }
-
-#AboutMe img{
-    max-width: 100%;
-    height: auto;
-    margin: 5px 10px 5px 10px;
+#AboutMe img {
+  max-width: 100%;
+  height: auto;
+  margin: 5px 10px 5px 10px;
 }
-
 #AboutMe p {
-    margin-right: 70px;
-    margin-left: 70px;
+  margin-right: 70px;
+  margin-left: 70px;
 }
 
 /*
-  ========================================
-  "Page-styling"
-  ========================================
+========================================
+"Page-styling"
+========================================
 */
 
 .fresh {
+  padding-top: 175px;
   text-align: center;
   color: #B73E52;
 }
@@ -496,35 +579,35 @@ footer {
 
 .coolList {
   border-left: 5px solid #EF770B;
-/*background-color: #2D2B2F;
+  /*background-color: #2D2B2F;
 opacity: 0.5;*/
-list-style-type: none;
-padding: 10px 20px;
-
+  list-style-type: none;
+  padding: 10px 20px;
 }
 
 /*
-  ========================================
-  "AboutMe" styling
-  ========================================
+========================================
+"AboutMe" styling
+========================================
 */
 
 #AboutMe {
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
-#AboutMe h2{
-    font-size: 200%;
-    font-weight: bold;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-#AboutMe img{
-    max-width: 100%;
-    height: auto;
-    margin: 5px 10px 5px 10px;
+#AboutMe h2 {
+  font-size: 200%;
+  font-weight: bold;
 }
 
-#AboutMe p{
-    margin-right: 70px;
-    margin-left: 70px;
+#AboutMe img {
+  max-width: 100%;
+  height: auto;
+  margin: 5px 10px 5px 10px;
+}
+
+#AboutMe p {
+  margin-right: 70px;
+  margin-left: 70px;
 }
