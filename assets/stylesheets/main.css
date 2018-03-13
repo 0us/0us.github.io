@@ -58,6 +58,10 @@ nav {
   flex-wrap: nowrap;
 }
 
+nav a{
+    color: white;
+}
+
 nav ul {
   display: flex;
   flex-flow: row nowrap;
