@@ -20,22 +20,23 @@ html {
 body {
   width: 100%;
   margin: 0;
-  padding: 0 0 200px 0; /*padding bottom er samme h?yde som footer*/
+  padding: 0 0 200px 0;
+  /*padding bottom er samme h?yde som footer*/
   background-color: #F2F3F3;
   color: #2D2B2F;
   height: 100%;
 }
 
 img {
-  height: 100%;
+  max-height: 100%;
   width: auto;
 }
 
 article {
-word-wrap: break-word;
+  word-wrap: break-word;
 }
 
-/*  ========================================
+/*========================================
   HEADER
   ========================================
 */
@@ -44,7 +45,7 @@ header {
   background-color: #EF770B;
   display: flex;
   flex-flow: row wrap;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logo {
@@ -60,8 +61,8 @@ nav {
   flex-wrap: nowrap;
 }
 
-nav a{
-    color: white;
+nav a {
+  color: white;
 }
 
 nav ul {
@@ -88,6 +89,20 @@ nav li {
 iframe {
   margin: 30px;
   border: 1px solid #B73E52;
+}
+
+.albumDisplay {
+    border-bottom: 10px dotted #B73E52;
+    margin-bottom: 10%;
+}
+
+.albumDisplay img {
+  margin-top:10px;
+  display:inline-flex;
+}
+
+.albumDisplay article {
+  text-transform: uppercase;
 }
 
 /*
@@ -118,7 +133,7 @@ footer {
   clear: both;
   text-align: center;
   font-size: 0.9em;
-  height: 200px   ;
+  height: 200px;
   width: 100%;
   position: absolute;
   right: 0;
@@ -134,14 +149,23 @@ footer {
   box-sizing: border-box;
 }
 
+/*
+  ===================================
+  MERCH CONTAINTER
+  ===================================
+*/
+
+/**
+ * the response grid system
+ * designed for screens iwth a wiidth less
+ * than 1200 pixels.
+ * the
+ */
+
 .container, .grid {
   margin: 0 auto;
   /*width: 1200px;*/
   width: 1fr;
-}
-
-.narrow {
-  width: 600px;
 }
 
 .container {
@@ -175,7 +199,7 @@ footer {
 
 .col-1-2 {
   /*width: 50%;*/
-  width: 0.5fr;
+  width: 100%;
 }
 
 .col-1 {
@@ -183,292 +207,282 @@ footer {
   width: 1fr;
 }
 
+/**
+ * If the screen size is larger than 1200 pixels in width
+ * use this grid layout.
+ * this layout shows 2 items per row.
+ * will most likely look really bad on ultrawide screens
+ * and 4k monitors/TVs.
+ */
+
 @media screen and (min-width: 1200px) {
   .container, .grid {
     width: 1200px;
   }
-
   .col-1-3 {
-    width: 33,33%;
+    width: 33.33%;
   }
-
   .col-2-3 {
-    width: 66,66%;
+    width: 66.66%;
   }
-
   .col-1-2 {
     width: 50%;
   }
-
   .col-1 {
     width: 100%;
   }
-}
+  .narrow {
+    width: 600px;
+  }
 
-.center {
-  margin: 0 auto;
-  text-align: center;
-}
-
-/*
+  .center {
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*
   ========================================
   Clearfix
   ========================================
 */
-
-.group:before, .group:after {
-  content: "";
-  display: table;
-}
-
-.group:after {
-  clear: both;
-}
-
-.group {
-  clear: both;
-  *zoom: 1;
-}
-
-/*
+  .group:before, .group:after {
+    content: "";
+    display: table;
+  }
+  .group:after {
+    clear: both;
+  }
+  .group {
+    clear: both;
+    *zoom: 1;
+  }
+  /*
   ========================================
   "Hjem" Styling
   ========================================
 */
-
-#indexArticle {
-  padding-top: 80px;
-  max-width: 900px;
-  margin: auto;
-}
-
-/*
+  #indexArticle {
+    padding-top: 80px;
+    max-width: 900px;
+    margin: auto;
+  }
+  /*
   ========================================
   "Om Oss" Styling
   ========================================
 */
-
-#bandArticle {
-  padding-top: 80px;
-  max-width: 900px;
-  margin: auto;
-}
-
-#bandArticle p {
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-
-#bandArticle img {
-  max-width: 100%;
-  height: auto;
-}
-
-#bandMemberContainer {
-  width: 100%;
-  background-color: #2D2B30;
-  margin: 75px 0 0 0;
-  padding: 50px 0 170px 0;
-  background: linear-gradient(to right, #141619, #2D2B30);
-}
-
-#bandMemberContainer h1 {
-  text-align: center;
-  margin: 0;
-  color: #F0770C;
-  padding-top: 45px;
-}
-
-.bandMember {
-  margin-top: 15px;
-  display: inline-block;
-  width: 20%;
-  padding: 0 3px 0 3px;
-}
-
-.bandMember img {
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.bandMember h2 {
-  color: #F2F4F3;
-  display: block;
-  text-align: center;
-  font-size: 25px;
-}
-
-.bandMember h2 a:link, a:visited {
-  color: #F2F4F3;
-  text-decoration: none;
-  border: solid;
-  border-radius: 5px;
-  padding: 0 10px 5px 10px;
-}
-
-.bandMember a:hover
-{
-  color: #B73D52;
-}
-
-/*
+  #bandArticle {
+    padding-top: 80px;
+    max-width: 900px;
+    margin: auto;
+  }
+  #bandArticle p {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  #bandArticle img {
+    max-width: 100%;
+    height: auto;
+  }
+  #bandMemberContainer {
+    width: 100%;
+    background-color: #2D2B30;
+    margin: 75px 0 0 0;
+    padding: 50px 0 170px 0;
+    background: linear-gradient(to right, #141619, #2D2B30);
+  }
+  #bandMemberContainer h1 {
+    text-align: center;
+    margin: 0;
+    color: #F0770C;
+    padding-top: 45px;
+  }
+  .bandMember {
+    margin-top: 15px;
+    display: inline-block;
+    width: 20%;
+    padding: 0 3px 0 3px;
+  }
+  .bandMember img {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .bandMember h2 {
+    color: #F2F4F3;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+  }
+  .bandMember h2 a:link, a:visited {
+    color: #F2F4F3;
+    text-decoration: none;
+    border: solid;
+    border-radius: 5px;
+    padding: 0 10px 5px 10px;
+  }
+  .bandMember a:hover {
+    color: #B73D52;
+  }
+  /*
   ========================================
   "Merch" styling
   ========================================
 */
-
-.merchItem {
-  margin-top: 60px;
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-  border-bottom:10px dotted #B73E52;
-}
-.merchItem p {
-
-}
-
-.merchItem a {
-  text-decoration: none;
-  color: #2D2B2F;
-  border:solid #B73E52;
-  border-radius: 5px;
-  padding:5px;
-  margin: 5px;
-}
-
-.price {
-  font-size: 120%;
-  font-weight: bold;
-}
+  .merchItem {
+    margin-top: 60px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 10px dotted #B73E52;
+  }
+  .merchItem p {}
+  .merchItem a {
+    text-decoration: none;
+    color: #2D2B2F;
+    border: solid #B73E52;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .price {
+    font-size: 120%;
+    font-weight: bold;
+  }
 
 .fresh {
-<<<<<<< HEAD
-  text-align: center;
-  color: #B73E52;
-}
-
-/*
+    text-align: center;
+    color: #B73E52;
+  }
+  .fresh h2 {
+    margin-top: 2em;
+  }
+  /*
   ========================================
   "Tour" styling
   ========================================
 */
-
-#concertContainers {
-  width: 100%;
-  margin: 0;
-}
-
-#concertContainers h1 {
-  text-align: center;
-  margin: 0;
-}
-
-#concertContainers p {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.concertContainer {
-  border-bottom: solid #000000;
-  width: 100%;
-  padding: 15px 0 15px 0;
-  overflow: hidden;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  background: linear-gradient(to right, #601f2a, #B73E52);
-}
-
-.concertContainer h2 {
-  padding: 0;
-  margin: 0;
-  color: #F2F3F3;
-  display: inline-block;
-  float: left;
-}
-
-.concertContainer button {
-  margin: 9px 0 9px 0;
-  width: 150px;
-  padding: 5px 0 5px;       
-  border-style: solid;
-  border-radius: 5px;
-  display: inline-block;
-  float: left;
-  background-color: Transparent;
-  color: #F2F3F3;
-}
-
-.concertContainer button:hover {
-  color: #B73E52;
-  cursor: pointer;
-}
-=======
-
-  text-align: center  ;
-  color: #2D2B2F;
-}
-.fresh h2 {
-  margin-top: 2em;
-}
-
-/*
-================
-KONTAKT STYLING
-================
+  #concertContainers {
+    width: 100%;
+    margin: 0;
+  }
+  #concertContainers h1 {
+    text-align: center;
+    margin: 55px 0 0 0;
+  }
+  #concertContainers p {
+    text-align: center;
+    margin-bottom: 75px;
+  }
+  .concertContainer {
+    border-bottom: solid #000000;
+    width: 100%;
+    padding: 15px 0 15px 0;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #601f2a, #B73E52);
+  }
+  .concertContainer h2 {
+    padding: 0;
+    margin: 0;
+    color: #F2F3F3;
+    display: inline-block;
+    float: left;
+  }
+  .concertContainer button {
+    margin: 9px 0 9px 0;
+    width: 150px;
+    padding: 5px 0 5px;
+    border-style: solid;
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    background-color: Transparent;
+    color: #F2F3F3;
+  }
+  .concertContainer button:hover {
+    color: #B73E52;
+    cursor: pointer;
+  }
+  /*
+  ========================================
+  "Individuelle artikler" styling
+  ========================================
 */
-.row {
-  width: 100%;
-  background-color: #2D2B30;
-  margin: 75px 0 0 0;
-  padding: 80px 0 100px 0;
-  background: linear-gradient(to right, #601f2a, #B73E52);
-}
-
-.lightText {
-  color: #F2F3F3;
-}
-
-.thicc article {
-  font-weight:
-}
-
-.coolList {
-  border-left: 5px solid #EF770B;
-/*background-color: #2D2B2F;
+  #AboutMe {
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  #AboutMe h2 {
+    font-size: 200%;
+    font-weight: bold;
+  }
+  #AboutMe img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px 10px 5px 10px;
+  }
+  #AboutMe p {
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+  /*
+  ========================================
+  "Page-styling"
+  ========================================
+*/
+  .fresh {
+    text-align: center;
+    color: #B73E52;
+  }
+  .paddingTopBottom {
+    padding: 45px 0 45px 0;
+  }
+  /*
+  ========================================
+  "Kontakt" styling
+  ========================================
+*/
+  .row {
+    width: 100%;
+    background-color: #2D2B30;
+    margin: 75px 0 0 0;
+    padding: 80px 0 100px 0;
+    background: linear-gradient(to right, #601f2a, #B73E52);
+  }
+  .lightText {
+    color: #F2F3F3;
+  }
+  .coolList {
+    border-left: 5px solid #EF770B;
+    /*background-color: #2D2B2F;
 opacity: 0.5;*/
-list-style-type: none;
-padding: 10px 20px;
-}
-
-/*
+    list-style-type: none;
+    padding: 10px 20px;
+  }
+  /*
   ========================================
   "AboutMe" styling
   ========================================
 */
-
-#AboutMe {
+  #AboutMe {
     text-align: center;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
-#AboutMe h2{
+  }
+  #AboutMe h2 {
     font-size: 200%;
     font-weight: bold;
-}
-
-#AboutMe img{
+  }
+  #AboutMe img {
     max-width: 100%;
     height: auto;
     margin: 5px 10px 5px 10px;
-}
-
-#AboutMe p{
+  }
+  #AboutMe p {
     margin-right: 70px;
     margin-left: 70px;
-}
->>>>>>> 1a45455ff91552437d52663796ed8d8d32f52dbe
+  }
