@@ -125,3 +125,23 @@ code {
   font-family: 'Open Sans', sans-serif;
   font-variant: small-caps;
 }
+
+/*
+  ======================================== 
+  "Tour" Styling
+  ========================================
+*/
+
+#concertContainers h1{
+  font-size: 40px;
+}
+
+.concertContainer h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.concertContainer button {
+  font-size: 20px;
+  font-weight: normal;
+}
