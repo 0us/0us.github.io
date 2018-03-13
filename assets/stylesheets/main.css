@@ -44,6 +44,7 @@ header {
   background-color: #EF770B;
   display: flex;
   flex-flow: row wrap;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logo {
@@ -57,6 +58,10 @@ nav {
   align-content: space-around;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+nav a{
+    color: white;
 }
 
 nav ul {
@@ -113,7 +118,7 @@ footer {
   clear: both;
   text-align: center;
   font-size: 0.9em;
-  height: 200px;
+  height: 200px   ;
   width: 100%;
   position: absolute;
   right: 0;
@@ -131,7 +136,12 @@ footer {
 
 .container, .grid {
   margin: 0 auto;
-  width: 1200px;
+  /*width: 1200px;*/
+  width: 1fr;
+}
+
+.narrow {
+  width: 600px;
 }
 
 .container {
@@ -154,19 +164,50 @@ footer {
 }
 
 .col-1-3 {
-  width: 33.33%;
+  /*width: 33,33%;*/
+  width: 0.3fr;
 }
 
 .col-2-3 {
-  width: 66.66%;
+  /*width: 66,66%;*/
+  width: 0.6fr;
 }
 
 .col-1-2 {
-  width: 50%;
+  /*width: 50%;*/
+  width: 0.5fr;
 }
 
 .col-1 {
-  width: 100%;
+  /*width: 100%;*/
+  width: 1fr;
+}
+
+@media screen and (min-width: 1200px) {
+  .container, .grid {
+    width: 1200px;
+  }
+
+  .col-1-3 {
+    width: 33,33%;
+  }
+
+  .col-2-3 {
+    width: 66,66%;
+  }
+
+  .col-1-2 {
+    width: 50%;
+  }
+
+  .col-1 {
+    width: 100%;
+  }
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*
@@ -306,6 +347,7 @@ footer {
 }
 
 .fresh {
+<<<<<<< HEAD
   text-align: center;
   color: #B73E52;
 }
@@ -366,3 +408,67 @@ footer {
   color: #B73E52;
   cursor: pointer;
 }
+=======
+
+  text-align: center  ;
+  color: #2D2B2F;
+}
+.fresh h2 {
+  margin-top: 2em;
+}
+
+/*
+================
+KONTAKT STYLING
+================
+*/
+.row {
+  width: 100%;
+  background-color: #2D2B30;
+  margin: 75px 0 0 0;
+  padding: 80px 0 100px 0;
+  background: linear-gradient(to right, #601f2a, #B73E52);
+}
+
+.lightText {
+  color: #F2F3F3;
+}
+
+.thicc article {
+  font-weight:
+}
+
+.coolList {
+  border-left: 5px solid #EF770B;
+/*background-color: #2D2B2F;
+opacity: 0.5;*/
+list-style-type: none;
+padding: 10px 20px;
+}
+
+/*
+  ========================================
+  "AboutMe" styling
+  ========================================
+*/
+
+#AboutMe {
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+#AboutMe h2{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#AboutMe img{
+    max-width: 100%;
+    height: auto;
+    margin: 5px 10px 5px 10px;
+}
+
+#AboutMe p{
+    margin-right: 70px;
+    margin-left: 70px;
+}
+>>>>>>> 1a45455ff91552437d52663796ed8d8d32f52dbe
