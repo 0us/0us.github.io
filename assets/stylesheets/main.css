@@ -112,7 +112,7 @@ footer {
   clear: both;
   text-align: center;
   font-size: 0.9em;
-  height: 200px;
+  height: 200px   ;
   width: 100%;
   position: absolute;
   right: 0;
@@ -131,7 +131,7 @@ footer {
 .container, .grid {
   margin: 0 auto;
   /*width: 1200px;*/
-  width: 0.85fr;
+  width: 1fr;
 }
 
 .container {
@@ -145,7 +145,7 @@ footer {
 }
 
 .col-1-3, .col-2-3, .col-1-2, .col-1 {
-  display: inline-flex;
+  display: inline-block;
   vertical-align: top;
 }
 
