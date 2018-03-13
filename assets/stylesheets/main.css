@@ -128,6 +128,12 @@ footer {
   box-sizing: border-box;
 }
 
+/**
+ * the response grid system
+ * designed for screens iwth a wiidth less
+ * than 1200 pixels.
+ * the
+ */
 .container, .grid {
   margin: 0 auto;
   /*width: 1200px;*/
@@ -161,7 +167,7 @@ footer {
 
 .col-1-2 {
   /*width: 50%;*/
-  width: 0.5fr;
+  width: 100%;
 }
 
 .col-1 {
@@ -169,6 +175,13 @@ footer {
   width: 1fr;
 }
 
+/**
+ * If the screen size is larger than 1200 pixels in width
+ * use this grid layout.
+ * this layout shows 2 items per row.
+ * will most likely look really bad on ultrawide screens
+ * and 4k monitors/TVs.
+ */
 @media screen and (min-width: 1200px) {
   .container, .grid {
     width: 1200px;
