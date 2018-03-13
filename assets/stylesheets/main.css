@@ -347,9 +347,12 @@ footer {
 }
 
 .fresh {
-<<<<<<< HEAD
   text-align: center;
   color: #B73E52;
+}
+
+.fresh h2 {
+  margin-top: 2em;
 }
 
 /*
@@ -365,12 +368,12 @@ footer {
 
 #concertContainers h1 {
   text-align: center;
-  margin: 0;
+  margin: 55px 0 0 0;
 }
 
 #concertContainers p {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 75px;
 }
 
 .concertContainer {
@@ -408,13 +411,9 @@ footer {
   color: #B73E52;
   cursor: pointer;
 }
-=======
 
-  text-align: center  ;
-  color: #2D2B2F;
-}
-.fresh h2 {
-  margin-top: 2em;
+.paddingTopBottom {
+  padding: 45px 0 45px 0;
 }
 
 /*
@@ -432,10 +431,6 @@ KONTAKT STYLING
 
 .lightText {
   color: #F2F3F3;
-}
-
-.thicc article {
-  font-weight:
 }
 
 .coolList {
@@ -471,4 +466,3 @@ padding: 10px 20px;
     margin-right: 70px;
     margin-left: 70px;
 }
->>>>>>> 1a45455ff91552437d52663796ed8d8d32f52dbe
