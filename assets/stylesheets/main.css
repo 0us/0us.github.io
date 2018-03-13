@@ -41,39 +41,40 @@ word-wrap: break-word;
 */
 
 header {
+  position: fixed;
   background-color: #EF770B;
-  display: flex;
-  flex-flow: row wrap;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logo {
-  padding-left: 50px;
+  display: inline-block;
+  float: left;
+  margin: 10px 0 20px 35px;
+  height: 100%;
+  width: 100px;
 }
 
 nav {
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  display: inline-block;
+  float: left;
 }
 
-nav a{
+nav a {
     color: white;
 }
 
 nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  display: inline-block;
+  float: left;
+  margin: 50px;
+  padding: 0;
 }
 
 nav li {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: inline-block;
+  float: left;
 }
 
 .navButton {
@@ -85,27 +86,16 @@ nav li {
   color: #B73E52;
 }
 
+/*
+  ========================================
+  "Music" styling
+  ========================================
+*/
+
 iframe {
   margin: 30px;
   border: 1px solid #B73E52;
 }
-
-/*
-.navButton2 {
-  text-decoration: none;
-  font-size: 120%;
-  padding: 0 2em;
-  background: #EF770B;
-  color: #2D2B2F;
-  font-family: Sans-serif;
-  height: 60px;
-  width: 150px;
-  line-height: 60px;
-  margin: 0;
-  text-align: center;
-  transition: all 0.3s ease 0s;
-}
-*/
 
 /*
   ========================================
@@ -153,6 +143,7 @@ footer {
 }
 
 .narrow {
+  padding-top: 60px;
   width: 600px;
 }
 
@@ -259,8 +250,9 @@ footer {
 */
 
 #indexArticle {
-  padding-top: 80px;
+  padding-top: 125px;
   max-width: 900px;
+  padding-bottom: 50px;
   margin: auto;
 }
 
@@ -271,7 +263,7 @@ footer {
 */
 
 #bandArticle {
-  padding-top: 80px;
+  padding-top: 225px;
   max-width: 900px;
   margin: auto;
 }
@@ -367,21 +359,15 @@ footer {
   font-weight: bold;
 }
 
-<<<<<<< HEAD
-.fresh {
-  text-align: center;
-  color: #B73E52;
-}
-
-.fresh h2 {
-  margin-top: 2em;
-}
-
 /*
   ========================================
   "Tour" styling
   ========================================
 */
+
+#tourContainer {
+padding-top: 225px;
+}
 
 #concertContainers {
   width: 100%;
@@ -390,11 +376,13 @@ footer {
 
 #concertContainers h1 {
   text-align: center;
-  margin: 55px 0 0 0;
+  padding: 0;
+  margin: 0;
 }
 
 #concertContainers p {
   text-align: center;
+  padding: 0;
   margin-bottom: 75px;
 }
 
@@ -468,6 +456,7 @@ footer {
 */
 
 .fresh {
+  padding-top: 175px;
   text-align: center;
   color: #B73E52;
 }
