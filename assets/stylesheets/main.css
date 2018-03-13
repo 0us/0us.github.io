@@ -304,3 +304,28 @@ footer {
   text-align: center;
   color: #B73E52;
 }
+
+/*
+  ========================================
+  "AboutMe" styling
+  ========================================
+*/
+#AboutMe h2{
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#AboutMe img{
+    max-width: 100%;
+    height: auto;
+    margin: 5px 10px 5px 10px;
+}
+#AboutMe p{
+    text-align: center;
+    font-size: 100%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin-right: 70px;
+    margin-left: 70px;
+}
