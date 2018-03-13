@@ -134,6 +134,18 @@ footer {
   box-sizing: border-box;
 }
 
+/*
+  ===================================
+  MERCH CONTAINTER
+  ===================================
+*/
+
+/**
+ * the response grid system
+ * designed for screens iwth a wiidth less
+ * than 1200 pixels.
+ * the
+ */
 .container, .grid {
   margin: 0 auto;
   /*width: 1200px;*/
@@ -175,13 +187,22 @@ footer {
 
 .col-1-2 {
   /*width: 50%;*/
-  width: 0.5fr;
+  width: 100%;
 }
 
 .col-1 {
   /*width: 100%;*/
   width: 1fr;
 }
+
+
+/**
+ * If the screen size is larger than 1200 pixels in width
+ * use this grid layout.
+ * this layout shows 2 items per row.
+ * will most likely look really bad on ultrawide screens
+ * and 4k monitors/TVs.
+ */
 
 @media screen and (min-width: 1200px) {
   .container, .grid {
@@ -203,7 +224,8 @@ footer {
   .col-1 {
     width: 100%;
   }
-}
+
+
 
 .center {
   margin: 0 auto;
@@ -346,12 +368,6 @@ footer {
   font-weight: bold;
 }
 
-.fresh {
-<<<<<<< HEAD
-  text-align: center;
-  color: #B73E52;
-}
-
 /*
   ========================================
   "Tour" styling
@@ -408,20 +424,50 @@ footer {
   color: #B73E52;
   cursor: pointer;
 }
-=======
 
-  text-align: center  ;
-  color: #2D2B2F;
+/*
+  ========================================
+  "Individuelle artikler" styling
+  ========================================
+*/
+
+#AboutMe {
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
-.fresh h2 {
-  margin-top: 2em;
+#AboutMe h2{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#AboutMe img{
+    max-width: 100%;
+    height: auto;
+    margin: 5px 10px 5px 10px;
+}
+
+#AboutMe p{
+    margin-right: 70px;
+    margin-left: 70px;
 }
 
 /*
-================
-KONTAKT STYLING
-================
+  ========================================
+  "Page-styling" 
+  ========================================
 */
+
+.fresh {
+  text-align: center;
+  color: #B73E52;
+}
+
+/*
+  ========================================
+  "Kontakt" styling
+  ========================================
+*/
+
 .row {
   width: 100%;
   background-color: #2D2B30;
@@ -445,30 +491,3 @@ opacity: 0.5;*/
 list-style-type: none;
 padding: 10px 20px;
 }
-
-/*
-  ========================================
-  "AboutMe" styling
-  ========================================
-*/
-
-#AboutMe {
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
-#AboutMe h2{
-    font-size: 200%;
-    font-weight: bold;
-}
-
-#AboutMe img{
-    max-width: 100%;
-    height: auto;
-    margin: 5px 10px 5px 10px;
-}
-
-#AboutMe p{
-    margin-right: 70px;
-    margin-left: 70px;
-}
->>>>>>> 1a45455ff91552437d52663796ed8d8d32f52dbe
