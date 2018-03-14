@@ -454,7 +454,7 @@ footer {
     margin-bottom: 75px;
   }
   .concertContainer {
-    border-bottom: solid #2D2B2F;
+    border-bottom: solid black;
     width: 100%;
     padding: 15px 0 15px 0;
     overflow: hidden;
@@ -464,11 +464,11 @@ footer {
     background: linear-gradient(to right, #601f2a, #B73E52);
   }
   .concertContainer h2 {
-    /*padding: 0;
+    padding: 0;
     margin: 0;
     color: #F2F3F3;
     display: inline-block;
-    float: left;*/
+    float: left;
   }
   .concertContainer button {
     margin: 9px 0 9px 0;
