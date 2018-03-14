@@ -40,6 +40,19 @@ article {
   HEADER
   ========================================
 */
+.logo {
+  margin: 10px 0 20px 35px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+
+}
+
+nav {
+  display: inline-block;
+  position:relative;
+  left: 100px;
+}
 
 header {
   position: fixed;
@@ -49,18 +62,6 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.logo {
-  display: inline-block;
-  float: left;
-  margin: 10px 0 20px 35px;
-  height: 100%;
-  width: 100px;
-}
-
-nav {
-  display: inline-block;
-  float: left;
-}
 
 nav a {
   color: white;
@@ -184,7 +185,7 @@ footer {
 
 .col-1-3 {
   /*width: 33,33%;*/
-  width: 0.3fr;
+  width: 100%;
 }
 
 .col-2-3 {
@@ -519,6 +520,12 @@ footer {
   }
   .paddingTopBottom {
     padding: 45px 0 45px 0;
+  }
+  .paddingAll, .paddingAll img {
+    padding: 45px;
+  }
+  .marginTop {
+    margin: 45px;
   }
   /*
   ========================================
