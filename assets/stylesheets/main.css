@@ -88,6 +88,10 @@ nav li {
   color: #B73E52;
 }
 
+.headerOffset {
+  padding-top: 175px;
+}
+
 /*
   ========================================
   "Music" styling
@@ -160,7 +164,6 @@ footer {
 }
 
 .narrow {
-  padding-top: 60px;
   width: 600px;
 }
 
@@ -258,7 +261,6 @@ footer {
   ========================================
 */
   #indexArticle {
-    padding-top: 125px;
     max-width: 900px;
     padding-bottom: 50px;
     margin: auto;
@@ -273,7 +275,6 @@ footer {
 }
 
   #bandArticle {
-    padding-top: 225px;
     max-width: 900px;
     margin: auto;
   }
@@ -437,7 +438,6 @@ footer {
   ========================================
 */
   #tourContainer {
-    padding-top: 225px;
   }
   #concertContainers {
     width: 100%;
@@ -491,7 +491,6 @@ footer {
 ========================================
 */
   #AboutMe {
-    padding-top: 175px;
     text-align: center;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
@@ -514,7 +513,6 @@ footer {
 ========================================
 */
   .fresh {
-    padding-top: 175px;
     text-align: center;
     color: #B73E52;
   }
