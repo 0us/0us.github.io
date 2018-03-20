@@ -60,6 +60,7 @@ header {
   display: block;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 999;
 }
 
 nav a {
@@ -111,6 +112,11 @@ nav li {
   bottom: 5%;
   left: 4%;
 }
+.bottom-right {
+  position: absolute;
+  bottom: 5%;
+  right: 4%;
+}
 
 /*
   ========================================
@@ -145,6 +151,7 @@ iframe {
 
 footer {
   background-color: #EF770B;
+  color: #F2F3F3;
   clear: both;
   text-align: center;
   font-size: 0.9em;
@@ -437,53 +444,62 @@ footer {
 ========================================
 */
 
-  .merchItem {
-    margin-top: 60px;
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 10px dotted #B73E52;
-  }
-  .merchItem p {
-    padding: 5px 0;
-  }
-  .merchItem a {
-    text-decoration: none;
-    color: #2D2B2F;
-    border: solid #B73E52;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-  }
-  .price {
-    font-size: 120%;
-    font-weight: bold;
-  }
-  .merchItem {
-    margin-top: 60px;
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 10px dotted #B73E52;
-  }
-  .merchItem p {}
-  .merchItem a {
-    text-decoration: none;
-    color: #2D2B2F;
-    border: solid #B73E52;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-  }
-  .price {
-    font-size: 120%;
-    font-weight: bold;
-  }
+.merchItem {
+  margin-top: 60px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 10px dotted #B73E52;
+}
+
+.merchItem p {
+  padding: 5px 0;
+}
+
+.merchItem a {
+  text-decoration: none;
+  color: #2D2B2F;
+  border: solid #B73E52;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.price {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.merchItem {
+  margin-top: 60px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 10px dotted #B73E52;
+}
+
+.merchItem p {}
+
+.merchItem a {
+  text-decoration: none;
+  color: #2D2B2F;
+  border: solid #B73E52;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.price {
+  font-size: 120%;
+  font-weight: bold;
+}
 
 /*
-  ========================================
-  "Tour" styling
-  ========================================
+
+  /*
+========================================
+"Tour" styling
+========================================
 */
 
   #tourContainer {
@@ -566,39 +582,23 @@ footer {
   "Kontakt" styling
 ========================================
 */
-  .row {
-    width: 100%;
-    background-color: #2D2B30;
-    margin: 75px 0 0 0;
-    padding: 80px 0 100px 0;
-    background: linear-gradient(to right, #601f2a, #B73E52);
-    color: #F2F3F3;
-  }
-  .lightText {
-    color: #F2F3F3;
-  }
-  .coolList {
-    border-left: 5px solid #EF770B;
-    /*background-color: #2D2B2F;
+
+.row {
+  width: 100%;
+  background-color: #2D2B30;
+  margin: 75px 0 0 0;
+  padding: 80px 0 100px 0;
+  background: linear-gradient(to right, #601f2a, #B73E52);
+}
+
+.lightText {
+  color: #F2F3F3;
+}
+
+.coolList {
+  border-left: 5px solid #EF770B;
+  /*background-color: #2D2B2F;
 opacity: 0.5;*/
   list-style-type: none;
   padding: 10px 20px;
 }
-
-/*
-========================================
-"AboutMe" styling
-========================================
-*/
-
-
-  #AboutMe {
-  }
-  #AboutMe h2 {
-  }
-  #AboutMe img {
-  }
-  #AboutMe p {
-  }
-  #AboutMe p, #AboutMe h2, #AboutMe h3{
-  }
