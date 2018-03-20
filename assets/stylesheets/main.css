@@ -40,17 +40,17 @@ article {
   HEADER
   ========================================
 */
+
 .logo {
   margin: 10px 0 20px 35px;
   width: 100px;
   position: absolute;
   left: 0;
-
 }
 
 nav {
   display: inline-block;
-  position:relative;
+  position: relative;
   left: 100px;
 }
 
@@ -61,7 +61,6 @@ header {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 nav a {
   color: white;
@@ -239,293 +238,343 @@ footer {
     width: 600px;
   }
 }
-  /*
+
+/*
   ========================================
   Clearfix
   ========================================
 */
-  .group:before, .group:after {
-    content: "";
-    display: table;
-  }
-  .group:after {
-    clear: both;
-  }
-  .group {
-    clear: both;
-    *zoom: 1;
-  }
-  /*
+
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
   ========================================
   "Hjem" Styling
   ========================================
 */
-  #indexArticle {
-    max-width: 900px;
-    padding-bottom: 50px;
-    margin: auto;
-  }
-  /*
+
+#indexArticle {
+  padding-top: 139px;
+  padding-bottom: 0px;
+  margin: auto;
+}
+
+/*
   ========================================
   "Om Oss" Styling
   ========================================
 */
-.jumbotron img{
 
+.jumbotron img {}
+
+#bandArticle {
+  max-width: 900px;
+  margin: auto;
 }
 
-  #bandArticle {
-    max-width: 900px;
-    margin: auto;
-  }
-  #bandArticle p {
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-  #bandArticle img {
-    max-width: 100%;
-    height: auto;
-  }
-  #bandMemberContainer {
-    width: 100%;
-    background-color: #2D2B30;
-    margin: 75px 0 0 0;
-    padding: 50px 0 170px 0;
-    background: linear-gradient(to right, #141619, #2D2B30);
-  }
-  #bandMemberContainer h1 {
-    text-align: center;
-    margin: 0;
-    color: #F0770C;
-    padding-top: 45px;
-  }
-  .bandMember {
-    margin-top: 15px;
-    display: inline-block;
-    width: 20%;
-    padding: 0 3px 0 3px;
-  }
-  .bandMember img {
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  .bandMember h2 {
-    color: #F2F4F3;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-  }
-  .bandMember h2 a:link, a:visited {
-    color: #F2F4F3;
-    text-decoration: none;
-    border: solid;
-    border-radius: 5px;
-    padding: 0 10px 5px 10px;
-  }
-  .bandMember a:hover {
-    color: #B73D52;
-  }
-  #bandArticle {
-    padding-top: 80px;
-    max-width: 900px;
-    margin: auto;
-  }
-  #bandArticle p {
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-  #bandArticle img {
-    max-width: 100%;
-    height: auto;
-  }
-  #bandMemberContainer {
-    width: 100%;
-    background-color: #2D2B30;
-    margin: 75px 0 0 0;
-    padding: 50px 0 170px 0;
-    background: linear-gradient(to right, #141619, #2D2B30);
-  }
-  #bandMemberContainer h1 {
-    text-align: center;
-    margin: 0;
-    color: #F0770C;
-    padding-top: 45px;
-  }
-  .bandMember {
-    margin-top: 15px;
-    display: inline-block;
-    width: 20%;
-    padding: 0 3px 0 3px;
-  }
-  .bandMember img {
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  .bandMember h2 {
-    color: #F2F4F3;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-  }
-  .bandMember h2 a:link, a:visited {
-    color: #F2F4F3;
-    text-decoration: none;
-    border: solid;
-    border-radius: 5px;
-    padding: 0 10px 5px 10px;
-  }
-  .bandMember a:hover {
-    color: #B73D52;
-  }
-  /*
+#bandArticle p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#bandArticle img {
+  max-width: 100%;
+  height: auto;
+}
+
+#bandMemberContainer {
+  width: 100%;
+  background-color: #2D2B30;
+  margin: 75px 0 0 0;
+  padding: 50px 0 170px 0;
+  background: linear-gradient(to right, #141619, #2D2B30);
+}
+
+#bandMemberContainer h1 {
+  text-align: center;
+  margin: 0;
+  color: #F0770C;
+  padding-top: 45px;
+}
+
+.bandMember {
+  margin-top: 15px;
+  display: inline-block;
+  width: 20%;
+  padding: 0 3px 0 3px;
+}
+
+.bandMember img {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.bandMember h2 {
+  color: #F2F4F3;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+.bandMember h2 a:link, a:visited {
+  color: #F2F4F3;
+  text-decoration: none;
+  border: solid;
+  border-radius: 5px;
+  padding: 0 10px 5px 10px;
+}
+
+.bandMember a:hover {
+  color: #B73D52;
+}
+
+#bandArticle {
+  padding-top: 80px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#bandArticle p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#bandArticle img {
+  max-width: 100%;
+  height: auto;
+}
+
+#bandMemberContainer {
+  width: 100%;
+  background-color: #2D2B30;
+  margin: 75px 0 0 0;
+  padding: 50px 0 170px 0;
+  background: linear-gradient(to right, #141619, #2D2B30);
+}
+
+#bandMemberContainer h1 {
+  text-align: center;
+  margin: 0;
+  color: #F0770C;
+  padding-top: 45px;
+}
+
+.bandMember {
+  margin-top: 15px;
+  display: inline-block;
+  width: 20%;
+  padding: 0 3px 0 3px;
+}
+
+.bandMember img {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.bandMember h2 {
+  color: #F2F4F3;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+.bandMember h2 a:link, a:visited {
+  color: #F2F4F3;
+  text-decoration: none;
+  border: solid;
+  border-radius: 5px;
+  padding: 0 10px 5px 10px;
+}
+
+.bandMember a:hover {
+  color: #B73D52;
+}
+
+/*
 ========================================
 "Merch" styling
 ========================================
 */
-  .merchItem {
-    margin-top: 60px;
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 10px dotted #B73E52;
-  }
-  .merchItem p {
-    padding: 5px 0;
-  }
-  .merchItem a {
-    text-decoration: none;
-    color: #2D2B2F;
-    border: solid #B73E52;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-  }
-  .price {
-    font-size: 120%;
-    font-weight: bold;
-  }
-  .merchItem {
-    margin-top: 60px;
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 10px dotted #B73E52;
-  }
-  .merchItem p {}
-  .merchItem a {
-    text-decoration: none;
-    color: #2D2B2F;
-    border: solid #B73E52;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-  }
-  .price {
-    font-size: 120%;
-    font-weight: bold;
-  }
-  /*
+
+.merchItem {
+  margin-top: 60px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 10px dotted #B73E52;
+}
+
+.merchItem p {
+  padding: 5px 0;
+}
+
+.merchItem a {
+  text-decoration: none;
+  color: #2D2B2F;
+  border: solid #B73E52;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.price {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.merchItem {
+  margin-top: 60px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 10px dotted #B73E52;
+}
+
+.merchItem p {}
+
+.merchItem a {
+  text-decoration: none;
+  color: #2D2B2F;
+  border: solid #B73E52;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.price {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/*
   ========================================
   "Tour" styling
   ========================================
 */
-  #tourContainer {
-  }
-  #concertContainers {
-    width: 100%;
-    margin: 0;
-  }
-  #concertContainers h1 {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-  }
-  #concertContainers p {
-    text-align: center;
-    padding: 0;
-    margin-bottom: 75px;
-  }
-  .concertContainer {
-    border-bottom: solid black;
-    width: 100%;
-    padding: 15px 0 15px 0;
-    overflow: hidden;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(to right, #601f2a, #B73E52);
-  }
-  .concertContainer h2 {
-    padding: 0;
-    margin: 0;
-    color: #F2F3F3;
-    display: inline-block;
-    float: left;
-  }
-  .concertContainer button {
-    margin: 9px 0 9px 0;
-    width: 150px;
-    padding: 5px 0 5px;
-    border-style: solid;
-    border-radius: 5px;
-    display: inline-block;
-    float: left;
-    background-color: Transparent;
-    color: #F2F3F3;
-  }
-  .concertContainer button:hover {
-    color: #B73E52;
-    cursor: pointer;
-  }
+
+#tourContainer {}
+
+#concertContainers {
+  width: 100%;
+  margin: 0;
+}
+
+#concertContainers h1 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#concertContainers p {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 75px;
+}
+
+.concertContainer {
+  border-bottom: solid black;
+  width: 100%;
+  padding: 15px 0 15px 0;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #601f2a, #B73E52);
+}
+
+.concertContainer h2 {
+  padding: 0;
+  margin: 0;
+  color: #F2F3F3;
+  display: inline-block;
+  float: left;
+}
+
+.concertContainer button {
+  margin: 9px 0 9px 0;
+  width: 150px;
+  padding: 5px 0 5px;
+  border-style: solid;
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+  background-color: Transparent;
+  color: #F2F3F3;
+}
+
+.concertContainer button:hover {
+  color: #B73E52;
+  cursor: pointer;
+}
 
 /*
 ========================================
 "Page-styling"
 ========================================
 */
-  .fresh {
-    text-align: center;
-    color: #B73E52;
-  }
-  .paddingTopBottom {
-    padding: 45px 0 45px 0;
-  }
-  .paddingAll, .paddingAll img {
-    padding: 45px;
-  }
-  .marginTop {
-    margin: 45px;
-  }
+
+.fresh {
+  text-align: center;
+  color: #B73E52;
+}
+
+.paddingTopBottom {
+  padding: 45px 0 45px 0;
+}
+
+.paddingAll, .paddingAll img {
+  padding: 45px;
+}
+
+.marginTop {
+  margin: 45px;
+}
+
 /*
 ========================================
   "Kontakt" styling
 ========================================
 */
-  .row {
-    width: 100%;
-    background-color: #2D2B30;
-    margin: 75px 0 0 0;
-    padding: 80px 0 100px 0;
-    background: linear-gradient(to right, #601f2a, #B73E52);
-  }
-  .lightText {
-    color: #F2F3F3;
-  }
-  .coolList {
-    border-left: 5px solid #EF770B;
-    /*background-color: #2D2B2F;
+
+.row {
+  width: 100%;
+  background-color: #2D2B30;
+  margin: 75px 0 0 0;
+  padding: 80px 0 100px 0;
+  background: linear-gradient(to right, #601f2a, #B73E52);
+}
+
+.lightText {
+  color: #F2F3F3;
+}
+
+.coolList {
+  border-left: 5px solid #EF770B;
+  /*background-color: #2D2B2F;
 opacity: 0.5;*/
-    list-style-type: none;
-    padding: 10px 20px;
-  }
+  list-style-type: none;
+  padding: 10px 20px;
+}
 
 /*
 ========================================
@@ -533,27 +582,30 @@ opacity: 0.5;*/
 ========================================
 */
 
-  #AboutMe {
-    margin: auto;
-    padding-top: 225px;
-  }
-  #AboutMe h2 {
-  }
-  #AboutMe img {
-    display: inline-block;
-    float: left;
-    width: 35%;
-    margin-left: 10%;
-    padding-bottom: 325px;
-  }
-  #AboutMe p {
-    padding-top: 50px;
-  }
-  #AboutMe p, #AboutMe h2 {
-    display: inline-block;
-    float: left;
-    width: 35%;
-    margin-right: 10%;
-    margin-left: 70px;
-    text-align: left;
-  }
+#AboutMe {
+  margin: auto;
+  padding-top: 225px;
+}
+
+#AboutMe h2 {}
+
+#AboutMe img {
+  display: inline-block;
+  float: left;
+  width: 35%;
+  margin-left: 10%;
+  padding-bottom: 325px;
+}
+
+#AboutMe p {
+  padding-top: 50px;
+}
+
+#AboutMe p, #AboutMe h2 {
+  display: inline-block;
+  float: left;
+  width: 35%;
+  margin-right: 10%;
+  margin-left: 70px;
+  text-align: left;
+}
