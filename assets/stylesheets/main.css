@@ -88,6 +88,10 @@ nav li {
   color: #B73E52;
 }
 
+.headerOffset {
+  padding-top: 175px;
+}
+
 /*
   ========================================
   "Music" styling
@@ -160,7 +164,6 @@ footer {
 }
 
 .narrow {
-  padding-top: 60px;
   width: 600px;
 }
 
@@ -258,7 +261,6 @@ footer {
   ========================================
 */
   #indexArticle {
-    padding-top: 125px;
     max-width: 900px;
     padding-bottom: 50px;
     margin: auto;
@@ -273,7 +275,6 @@ footer {
 }
 
   #bandArticle {
-    padding-top: 225px;
     max-width: 900px;
     margin: auto;
   }
@@ -431,13 +432,13 @@ footer {
     font-size: 120%;
     font-weight: bold;
   }
+
   /*
   ========================================
   "Tour" styling
   ========================================
 */
   #tourContainer {
-    padding-top: 225px;
   }
   #concertContainers {
     width: 100%;
@@ -471,9 +472,9 @@ footer {
     float: left;
   }
   .concertContainer button {
-    margin: 9px 0 9px 0;
+    margin: 0;
+    padding: 0;
     width: 150px;
-    padding: 5px 0 5px;
     border-style: solid;
     border-radius: 5px;
     display: inline-block;
@@ -485,36 +486,16 @@ footer {
     color: #B73E52;
     cursor: pointer;
   }
-  /*
-========================================
-"Individuelle artikler" styling
-========================================
-*/
-  #AboutMe {
-    padding-top: 175px;
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  #sizeFix {
+    width: 150px;
   }
-  #AboutMe h2 {
-    font-size: 200%;
-    font-weight: bold;
-  }
-  #AboutMe img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px 10px 5px 10px;
-  }
-  #AboutMe p {
-    margin-right: 70px;
-    margin-left: 70px;
-  }
-  /*
+
+/*
 ========================================
 "Page-styling"
 ========================================
 */
   .fresh {
-    padding-top: 175px;
     text-align: center;
     color: #B73E52;
   }
@@ -527,10 +508,10 @@ footer {
   .marginTop {
     margin: 45px;
   }
-  /*
-  ========================================
+/*
+========================================
   "Kontakt" styling
-  ========================================
+========================================
 */
   .row {
     width: 100%;
@@ -549,25 +530,34 @@ opacity: 0.5;*/
     list-style-type: none;
     padding: 10px 20px;
   }
-  /*
+
+/*
 ========================================
 "AboutMe" styling
 ========================================
 */
+
   #AboutMe {
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: auto;
+    padding-top: 225px;
   }
   #AboutMe h2 {
-    font-size: 200%;
-    font-weight: bold;
   }
   #AboutMe img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px 10px 5px 10px;
+    display: inline-block;
+    float: left;
+    width: 35%;
+    margin-left: 10%;
+    padding-bottom: 325px;
   }
   #AboutMe p {
-    margin-right: 70px;
+    padding-top: 30px;
+  }
+  #AboutMe p, #AboutMe h2, #AboutMe h3{
+    display: inline-block;
+    float: left;
+    width: 35%;
+    margin-right: 10%;
     margin-left: 70px;
+    text-align: left;
   }
