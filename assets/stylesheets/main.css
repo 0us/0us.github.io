@@ -40,17 +40,17 @@ article {
   HEADER
   ========================================
 */
+
 .logo {
   margin: 10px 0 20px 35px;
   width: 100px;
   position: absolute;
   left: 0;
-
 }
 
 nav {
   display: inline-block;
-  position:relative;
+  position: relative;
   left: 100px;
 }
 
@@ -61,7 +61,6 @@ header {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 nav a {
   color: white;
@@ -90,6 +89,27 @@ nav li {
 
 .headerOffset {
   padding-top: 175px;
+}
+
+#imageTextBox
+{
+  padding: 25px 25px 25px 25px;
+  border: 1px solid;
+  opacity: 0.8;
+}
+
+#imageTextBox {
+  background-color: #000000;
+}
+
+#imageTextBox h3 {
+  color: #f3f3f3;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 5%;
+  left: 4%;
 }
 
 /*
@@ -239,157 +259,184 @@ footer {
     width: 600px;
   }
 }
-  /*
+
+/*
   ========================================
   Clearfix
   ========================================
 */
-  .group:before, .group:after {
-    content: "";
-    display: table;
-  }
-  .group:after {
-    clear: both;
-  }
-  .group {
-    clear: both;
-    *zoom: 1;
-  }
-  /*
+
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
   ========================================
   "Hjem" Styling
   ========================================
 */
-  #indexArticle {
-    max-width: 900px;
-    padding-bottom: 50px;
-    margin: auto;
-  }
-  /*
+
+#indexArticle {
+  padding-top: 139px;
+  padding-bottom: 0px;
+  margin: auto;
+}
+
+/*
   ========================================
   "Om Oss" Styling
   ========================================
 */
-.jumbotron img{
 
+.jumbotron img {}
+
+#bandArticle {
+  max-width: 900px;
+  margin: auto;
 }
 
-  #bandArticle {
-    max-width: 900px;
-    margin: auto;
-  }
-  #bandArticle p {
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-  #bandArticle img {
-    max-width: 100%;
-    height: auto;
-  }
-  #bandMemberContainer {
-    width: 100%;
-    background-color: #2D2B30;
-    margin: 75px 0 0 0;
-    padding: 50px 0 170px 0;
-    background: linear-gradient(to right, #141619, #2D2B30);
-  }
-  #bandMemberContainer h1 {
-    text-align: center;
-    margin: 0;
-    color: #F0770C;
-    padding-top: 45px;
-  }
-  .bandMember {
-    margin-top: 15px;
-    display: inline-block;
-    width: 20%;
-    padding: 0 3px 0 3px;
-  }
-  .bandMember img {
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  .bandMember h2 {
-    color: #F2F4F3;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-  }
-  .bandMember h2 a:link, a:visited {
-    color: #F2F4F3;
-    text-decoration: none;
-    border: solid;
-    border-radius: 5px;
-    padding: 0 10px 5px 10px;
-  }
-  .bandMember a:hover {
-    color: #B73D52;
-  }
-  #bandArticle {
-    padding-top: 80px;
-    max-width: 900px;
-    margin: auto;
-  }
-  #bandArticle p {
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-  #bandArticle img {
-    max-width: 100%;
-    height: auto;
-  }
-  #bandMemberContainer {
-    width: 100%;
-    background-color: #2D2B30;
-    margin: 75px 0 0 0;
-    padding: 50px 0 170px 0;
-    background: linear-gradient(to right, #141619, #2D2B30);
-  }
-  #bandMemberContainer h1 {
-    text-align: center;
-    margin: 0;
-    color: #F0770C;
-    padding-top: 45px;
-  }
-  .bandMember {
-    margin-top: 15px;
-    display: inline-block;
-    width: 20%;
-    padding: 0 3px 0 3px;
-  }
-  .bandMember img {
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  .bandMember h2 {
-    color: #F2F4F3;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-  }
-  .bandMember h2 a:link, a:visited {
-    color: #F2F4F3;
-    text-decoration: none;
-    border: solid;
-    border-radius: 5px;
-    padding: 0 10px 5px 10px;
-  }
-  .bandMember a:hover {
-    color: #B73D52;
-  }
-  /*
+#bandArticle p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#bandArticle img {
+  max-width: 100%;
+  height: auto;
+}
+
+#bandMemberContainer {
+  width: 100%;
+  background-color: #2D2B30;
+  margin: 75px 0 0 0;
+  padding: 50px 0 170px 0;
+  background: linear-gradient(to right, #141619, #2D2B30);
+}
+
+#bandMemberContainer h1 {
+  text-align: center;
+  margin: 0;
+  color: #F0770C;
+  padding-top: 45px;
+}
+
+.bandMember {
+  margin-top: 15px;
+  display: inline-block;
+  width: 20%;
+  padding: 0 3px 0 3px;
+}
+
+.bandMember img {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.bandMember h2 {
+  color: #F2F4F3;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+.bandMember h2 a:link, a:visited {
+  color: #F2F4F3;
+  text-decoration: none;
+  border: solid;
+  border-radius: 5px;
+  padding: 0 10px 5px 10px;
+}
+
+.bandMember a:hover {
+  color: #B73D52;
+}
+
+#bandArticle {
+  padding-top: 80px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#bandArticle p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#bandArticle img {
+  max-width: 100%;
+  height: auto;
+}
+
+#bandMemberContainer {
+  width: 100%;
+  background-color: #2D2B30;
+  margin: 75px 0 0 0;
+  padding: 50px 0 170px 0;
+  background: linear-gradient(to right, #141619, #2D2B30);
+}
+
+#bandMemberContainer h1 {
+  text-align: center;
+  margin: 0;
+  color: #F0770C;
+  padding-top: 45px;
+}
+
+.bandMember {
+  margin-top: 15px;
+  display: inline-block;
+  width: 20%;
+  padding: 0 3px 0 3px;
+}
+
+.bandMember img {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.bandMember h2 {
+  color: #F2F4F3;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+.bandMember h2 a:link, a:visited {
+  color: #F2F4F3;
+  text-decoration: none;
+  border: solid;
+  border-radius: 5px;
+  padding: 0 10px 5px 10px;
+}
+
+.bandMember a:hover {
+  color: #B73D52;
+}
+
+/*
 ========================================
 "Merch" styling
 ========================================
 */
+
   .merchItem {
     margin-top: 60px;
     text-decoration: none;
@@ -433,11 +480,12 @@ footer {
     font-weight: bold;
   }
 
-  /*
+/*
   ========================================
   "Tour" styling
   ========================================
 */
+
   #tourContainer {
   }
   #concertContainers {
@@ -495,19 +543,24 @@ footer {
 "Page-styling"
 ========================================
 */
-  .fresh {
-    text-align: center;
-    color: #B73E52;
-  }
-  .paddingTopBottom {
-    padding: 45px 0 45px 0;
-  }
-  .paddingAll, .paddingAll img {
-    padding: 45px;
-  }
-  .marginTop {
-    margin: 45px;
-  }
+
+.fresh {
+  text-align: center;
+  color: #B73E52;
+}
+
+.paddingTopBottom {
+  padding: 45px 0 45px 0;
+}
+
+.paddingAll, .paddingAll img {
+  padding: 45px;
+}
+
+.marginTop {
+  margin: 45px;
+}
+
 /*
 ========================================
   "Kontakt" styling
@@ -519,6 +572,7 @@ footer {
     margin: 75px 0 0 0;
     padding: 80px 0 100px 0;
     background: linear-gradient(to right, #601f2a, #B73E52);
+    color: #F2F3F3;
   }
   .lightText {
     color: #F2F3F3;
@@ -527,15 +581,16 @@ footer {
     border-left: 5px solid #EF770B;
     /*background-color: #2D2B2F;
 opacity: 0.5;*/
-    list-style-type: none;
-    padding: 10px 20px;
-  }
+  list-style-type: none;
+  padding: 10px 20px;
+}
 
 /*
 ========================================
 "AboutMe" styling
 ========================================
 */
+
 
   #AboutMe {
   }

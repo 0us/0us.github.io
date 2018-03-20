@@ -93,6 +93,10 @@ code {
   font-size: 1.414rem;
   margin-top: 1.414rem;
 }
+.headingStyle {
+
+}
+
 /* Hug the block above you */
 .hug {
   margin-top: 0;
@@ -103,7 +107,7 @@ code {
   "Om Oss" Styling
   ========================================
 */
-#bandMemberContainer h1, .fresh h1
+#bandMemberContainer h1, .fresh h1, .headingStyle
 {
   font-family: 'Permanent Marker', cursive;
 }
@@ -127,7 +131,7 @@ code {
 }
 
 /*
-  ======================================== 
+  ========================================
   "Tour" Styling
   ========================================
 */
@@ -161,6 +165,11 @@ code {
 }
 
 #AboutMe h3{
+  font-style: italic;
+  font-size: 120%;
+}
+
+.quote {
   font-style: italic;
   font-size: 120%;
 }
