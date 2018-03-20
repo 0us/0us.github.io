@@ -555,7 +555,7 @@ opacity: 0.5;*/
   }
   #AboutMe p, #AboutMe h2, #AboutMe h3{
     display: inline-block;
-    float: left;
+    float: right;
     width: 35%;
     margin-right: 10%;
     margin-left: 70px;
