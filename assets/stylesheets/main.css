@@ -91,6 +91,27 @@ nav li {
   padding-top: 175px;
 }
 
+#imageTextBox
+{
+  padding: 25px 25px 25px 25px;
+  border: 1px solid;
+  opacity: 0.8;
+}
+
+#imageTextBox {
+  background-color: #000000;
+}
+
+#imageTextBox h3 {
+  color: #f3f3f3;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 5%;
+  left: 4%;
+}
+
 /*
   ========================================
   "Music" styling

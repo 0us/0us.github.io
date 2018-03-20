@@ -37,11 +37,11 @@
         jssor_1_slider_init = function() {
 
             var jssor_1_SlideshowTransitions = [
-              {$Duration:800,$Opacity:2}
+              {$Duration:1000,$Opacity:2}
             ];
 
             var jssor_1_options = {
-              $AutoPlay: 1,
+              $AutoPlay: 0,
               $SlideshowOptions: {
                 $Class: $JssorSlideshowRunner$,
                 $Transitions: jssor_1_SlideshowTransitions,
@@ -59,7 +59,7 @@
 
             /*#region responsive code begin*/
 
-            var MAX_WIDTH = 30000;
+            var MAX_WIDTH = 2000;
 
             function ScaleSlider() {
                 var containerElement = jssor_1_slider.$Elmt.parentNode;
@@ -118,8 +118,11 @@
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/images/spin.svg" />
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
-            <div data-p="170.00">
+            <div data-p="170.00" >
                 <img data-u="image" src="assets/images/001.jpg" />
+                <div id="imageTextBox" class="bottom-left">
+                        <h3>Levitation Room - Minds of our own</h3>
+                </div>
             </div>
             <div data-p="170.00">
               <a href="music.html">
