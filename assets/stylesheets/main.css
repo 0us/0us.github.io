@@ -551,9 +551,9 @@ opacity: 0.5;*/
     padding-bottom: 325px;
   }
   #AboutMe p {
-    padding-top: 50px;
+    padding-top: 30px;
   }
-  #AboutMe p, #AboutMe h2 {
+  #AboutMe p, #AboutMe h2, #AboutMe h3{
     display: inline-block;
     float: left;
     width: 35%;
