@@ -471,9 +471,9 @@ footer {
     float: left;
   }
   .concertContainer button {
-    margin: 9px 0 9px 0;
+    margin: 0;
+    padding: 0;
     width: 150px;
-    padding: 5px 0 5px;
     border-style: solid;
     border-radius: 5px;
     display: inline-block;
@@ -485,29 +485,11 @@ footer {
     color: #B73E52;
     cursor: pointer;
   }
-  /*
-========================================
-"Individuelle artikler" styling
-========================================
-*/
-  #AboutMe {
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  #sizeFix {
+    width: 150px;
   }
-  #AboutMe h2 {
-    font-size: 200%;
-    font-weight: bold;
-  }
-  #AboutMe img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px 10px 5px 10px;
-  }
-  #AboutMe p {
-    margin-right: 70px;
-    margin-left: 70px;
-  }
-  /*
+
+/*
 ========================================
 "Page-styling"
 ========================================
@@ -525,10 +507,10 @@ footer {
   .marginTop {
     margin: 45px;
   }
-  /*
-  ========================================
+/*
+========================================
   "Kontakt" styling
-  ========================================
+========================================
 */
   .row {
     width: 100%;
@@ -547,25 +529,34 @@ opacity: 0.5;*/
     list-style-type: none;
     padding: 10px 20px;
   }
-  /*
+
+/*
 ========================================
 "AboutMe" styling
 ========================================
 */
+
   #AboutMe {
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: auto;
+    padding-top: 225px;
   }
   #AboutMe h2 {
-    font-size: 200%;
-    font-weight: bold;
   }
   #AboutMe img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px 10px 5px 10px;
+    display: inline-block;
+    float: left;
+    width: 35%;
+    margin-left: 10%;
+    padding-bottom: 325px;
   }
   #AboutMe p {
-    margin-right: 70px;
+    padding-top: 50px;
+  }
+  #AboutMe p, #AboutMe h2 {
+    display: inline-block;
+    float: left;
+    width: 35%;
+    margin-right: 10%;
     margin-left: 70px;
+    text-align: left;
   }
