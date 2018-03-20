@@ -471,9 +471,9 @@ footer {
     float: left;
   }
   .concertContainer button {
-    margin: 9px 0 9px 0;
+    margin: 0;
+    padding: 0;
     width: 150px;
-    padding: 5px 0 5px;
     border-style: solid;
     border-radius: 5px;
     display: inline-block;
@@ -484,6 +484,9 @@ footer {
   .concertContainer button:hover {
     color: #B73E52;
     cursor: pointer;
+  }
+  #sizeFix {
+    width: 150px;
   }
 
 /*
