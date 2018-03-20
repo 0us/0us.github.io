@@ -538,26 +538,12 @@ opacity: 0.5;*/
 */
 
   #AboutMe {
-    margin: auto;
-    padding-top: 225px;
   }
   #AboutMe h2 {
   }
   #AboutMe img {
-    display: inline-block;
-    float: left;
-    width: 35%;
-    margin-left: 10%;
-    padding-bottom: 325px;
   }
   #AboutMe p {
-    padding-top: 30px;
   }
   #AboutMe p, #AboutMe h2, #AboutMe h3{
-    display: inline-block;
-    float: left;
-    width: 35%;
-    margin-right: 10%;
-    margin-left: 70px;
-    text-align: left;
   }
